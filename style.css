@@ -1,0 +1,259 @@
+
+/* Universal Reset --------------------------------------------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Start Temporary Styles---------------------------------------------------------- 
+* {
+    padding: 0.5rem;
+    border: 2px solid rgb(220,220,220);
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    border: 2px solid red;
+}
+
+ End Temporary Styles----------------------------------------------------------- */
+
+/* Universal Styles--------------------------------------------------------------- */
+
+html, body {
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+section {
+    padding: 5%;
+}
+/* End Universal Styles---------------------------------------------------------- */
+
+/* Header ----------------------------------------------------------------------- */
+
+header {
+    background-image: url('/images/sts-bmw.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: 29% 30%;
+    padding: 19% 2% 2% 2%;
+    
+    /*padding: 18vh 5%;
+    min-height: 60vh;
+    align-items: center;
+    */
+}
+
+span {
+    display: block;
+    background-color: rgba(200,20,20,.4);
+    /* opacity seems to be controlled by the 4th number in the rgba !!! which is .4 */
+    padding: 15px;
+    margin-bottom: 5px; 
+}
+
+/* Typography -------------------------------------------------------------------- */
+
+h1 {
+    font-size: 4rem; 
+    color: white;
+    align-items:center;
+    align-items:flex-end;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+p {
+    line-height: 1.4rem;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+} 
+
+    a:hover {
+        color: #629dc6;
+    }
+
+/* Buttons -------------------------------------------------------------------- */
+.button {
+text-decoration: none;
+text-transform: uppercase;
+border: 2px solid;
+padding: 0.8rem 2rem;
+display: inline-block;
+margin-top: 1rem;
+}
+
+    /* Growing Buttons With Color Transition */
+.fab {
+transition: all 0.2s;
+    }
+        
+a.grow {
+    display:inline-block;
+    transform:scale(1);
+    }
+
+a.grow:hover{
+    transform:scale(1.2);
+    }
+
+
+
+/* Classes ----------------------------------------------------------------------- */
+
+/* Section: "Intensives Training" ----------------------------------------------------------------------- */
+.bg-navy {
+    background-color: #021A3C;
+    color: white;
+    }
+
+/* Section: "Banner 2" ----------------------------------------------------------------------- */
+    .banner-2 {
+        background-image: url('/images/bmw-3.jpg');
+        background-color: #021A3C;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 18vh 5%;
+        min-height: 60vh;
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+
+    /* Section: "Training und Events" -------------------------------------------------------------------- */
+
+    .bg-image {
+        background-image: url('/images/sts-boots.jpg');
+        display: inline-block;
+        width: 31%;
+        padding: 5%;
+        margin: 0.4%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+        padding-bottom: 25%;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .img-1 { background-image: url('/images/sts-boots.jpg')}
+    .img-2 { background-image: url('/images/bmw-girl.jpg')}
+    .img-3 { background-image: url('/images/bmw-julia.jpg')}
+    .img-4 { background-image: url('/images/leinwand.jpg')}
+    .img-5 { background-image: url('/images/bmw-move7.jpg')}
+    .img-6 { background-image: url('/images/bmw-move1.jpg')}
+
+    .img-1 {background-position: 20% 50%;}
+    .img-2 {background-position: 100% 49%;}
+    .img-3 {background-position: center;}
+    .img-4 {background-position: 29% 50%;}
+    .img-5 {background-position: 30% 70%;}
+
+
+    footer {
+        padding: 5% 10%;
+        text-align: center;
+    }
+
+    footer nav a {
+text-decoration: none;
+text-transform: uppercase;
+padding: 1rem;
+margin-top: 0.6rem;
+display: inline-block;
+    }
+
+
+    /* ------------------------- Tina's Utility Classes --------------------*/
+
+    /* 
+.padded-1 { padding: 1rem; }
+.padded { padding: 5%; }
+
+.padded-top { padding-top: 5%; }
+.padded-bottom { padding-bottom: 5%; }
+.padded-left { padding-left: 5%; }
+.padded-right { padding-right: 5%; } 
+*/
+/*
+Padding Utility Classes  
+.padded-sm { padding: 2.5%; }
+.padded-md { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1 { padding: 1rem; }
+.padded-2 { padding: 2rem; }
+
+.padded-t { padding-top: 5%; }
+.padded-b { padding-bottom: 5%; }
+.padded-l { padding-left: 5%; }
+.padded-r { padding-right: 5%; }
+
+.padded-tb { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+Margin Utility Classes 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+*/
+
+/* Github Test */
