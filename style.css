@@ -20,6 +20,8 @@ h1,h2,h3,h4,h5,h6,p,a {
 
  End Temporary Styles----------------------------------------------------------- */
 
+ /*--------- Font: font-family: 'Work Sans', sans-serif; ---------*/
+
 /* Universal Styles--------------------------------------------------------------- */
 
 html, body {
@@ -34,13 +36,13 @@ section {
 
 /* Header ----------------------------------------------------------------------- */
 
+
 header {
-    background-image: url('/images/sts-bmw.jpg');
+    background-image: url('/images/sts-bmw2.jpg');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    background-position: 29% 30%;
+    background-position: 0% 50%;
     padding: 19% 2% 2% 2%;
     
     /*padding: 18vh 5%;
@@ -51,19 +53,24 @@ header {
 
 span {
     display: block;
-    background-color: rgba(200,20,20,.4);
+    background-color: rgba(126, 14, 14, 0.7);
     /* opacity seems to be controlled by the 4th number in the rgba !!! which is .4 */
-    padding: 15px;
-    margin-bottom: 5px; 
+    margin-bottom: 0.5rem; 
+    padding: 0rem 1.3rem;
 }
+
+.thicker { font-size: 4.3rem;}
 
 /* Typography -------------------------------------------------------------------- */
 
 h1 {
-    font-size: 4rem; 
+    font-size: 3.8rem; 
     color: white;
     align-items:center;
     align-items:flex-end;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    line-height:1.2em;
 }
 
 h2 {
